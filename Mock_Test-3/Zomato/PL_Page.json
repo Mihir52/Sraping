@@ -1,0 +1,750 @@
+{
+"@context": "https://schema.org",
+"@type": "ItemList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"item": {
+"@type": "Restaurant",
+"name": "Hotel Nalandha",
+"image": "https://b.zmtcdn.com/data/pictures/7/20201917/3dc05e696c24656be3e3c6b2cb3fa894_o2_featured_v2.jpg?output-format=webp",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3.9",
+"reviewCount": "3,101"
+},
+"url": "/ottapalam/hotel-nalandha-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "Main Road, Palakkad-kullapiilu Highway, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "South Indian, Biryani, North Indian"
+}
+},
+{
+"@type": "ListItem",
+"position": 2,
+"item": {
+"@type": "Restaurant",
+"name": "KFC",
+"image": "https://b.zmtcdn.com/data/pictures/4/21135794/a32f5869b6d9b47c9fda4af9745fd3c9_o2_featured_v2.jpg?output-format=webp",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3.8",
+"reviewCount": "396"
+},
+"url": "/ottapalam/kfc-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "Survey 52/1, 76/9, Ground Floor & 1st Floor, Ponnani Road, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Burger, Fast Food, Rolls"
+}
+},
+{
+"@type": "ListItem",
+"position": 3,
+"item": {
+"@type": "Restaurant",
+"name": "Pizza Hut",
+"image": "https://b.zmtcdn.com/data/pictures/chains/9/20499689/9979d1d417e4516c475045031bb9b4b1_o2_featured_v2.jpg?output-format=webp",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.2",
+"reviewCount": "693"
+},
+"url": "/ottapalam/pizza-hut-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "Shop 1, 2, 3, 4, 5, 24/348, Building Number, Keviz Arcade, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Pizza"
+}
+},
+{
+"@type": "ListItem",
+"position": 4,
+"item": {
+"@type": "Restaurant",
+"name": "Nila Restaurant",
+"image": "https://b.zmtcdn.com/data/pictures/9/19087579/4f1d9f05d21fbe3ec9716ace3609dd72_o2_featured_v2.jpg?output-format=webp",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3.9",
+"reviewCount": "1,089"
+},
+"url": "/ottapalam/nila-restaurant-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "JRJ Complex, Ottapalam Circle, Palakkad, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Biryani, Arabian"
+}
+},
+{
+"@type": "ListItem",
+"position": 5,
+"item": {
+"@type": "Restaurant",
+"name": "Looco's Pizza",
+"image": "https://b.zmtcdn.com/data/pictures/2/20288072/1ec13ac86858dac34fed3c152cee8b76_o2_featured_v2.jpg?output-format=webp",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.3",
+"reviewCount": "794"
+},
+"url": "/ottapalam/loocos-pizza-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "24/326-1, Near Blue Star Auto Consultants, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Pizza, Salad, Fast Food"
+}
+},
+{
+"@type": "ListItem",
+"position": 6,
+"item": {
+"@type": "Restaurant",
+"name": "Idam Homely Restaurant",
+"image": "https://b.zmtcdn.com/data/pictures/0/20473200/33d86bcffc824ed629089afa69c72515_o2_featured_v2.jpg?output-format=webp",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3.7",
+"reviewCount": "337"
+},
+"url": "/ottapalam/idam-homely-restaurant-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "24/121(8/11), Puthanpeedikakkal House, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "South Indian, Biryani"
+}
+},
+{
+"@type": "ListItem",
+"position": 7,
+"item": {
+"@type": "Restaurant",
+"name": "Chicking",
+"image": "https://b.zmtcdn.com/data/pictures/5/20502815/a8ad18169145b656d94a7b46661f62db_o2_featured_v2.jpg?output-format=webp",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3.9",
+"reviewCount": "72"
+},
+"url": "/ottapalam/chicking-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "1st Floor, Ladder Cinemas, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Burger, Fast Food"
+}
+},
+{
+"@type": "ListItem",
+"position": 8,
+"item": {
+"@type": "Restaurant",
+"name": "Pastas By Pizza Hut",
+"image": "https://b.zmtcdn.com/data/pictures/7/21411487/b1ed55c8980367f7e96d0d4387f58185_o2_featured_v2.jpg?output-format=webp",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "2.7",
+"reviewCount": "12"
+},
+"url": "/ottapalam/pastas-by-pizza-hut-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "24/348, Shop 1/2/3/4/5, Building Number, Keviz Arcade, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Pasta, Italian"
+}
+},
+{
+"@type": "ListItem",
+"position": 9,
+"item": {
+"@type": "Restaurant",
+"name": "Juicy",
+"image": "https://b.zmtcdn.com/data/pictures/6/20365696/f71695f60c6f5d13b10b9627b28732a4_o2_featured_v2.jpg?output-format=webp",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.2",
+"reviewCount": "338"
+},
+"url": "/ottapalam/juicy-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "24/121/2, 24/121/3, East Ottapalam, Palakkad, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Fast Food, Ice Cream, Beverages"
+}
+},
+{
+"@type": "ListItem",
+"position": 10,
+"item": {
+"@type": "Restaurant",
+"name": "Mouzy Banana Avil Milk",
+"image": "https://b.zmtcdn.com/images/res_avatar_476_320_1x_new.png",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.3",
+"reviewCount": "61"
+},
+"url": "/ottapalam/mouzy-banana-avil-milk-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "24/348-7, 9, 10, 11, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Shake"
+}
+},
+{
+"@type": "ListItem",
+"position": 11,
+"item": {
+"@type": "Restaurant",
+"name": "Noora Restaurant",
+"image": "https://b.zmtcdn.com/data/pictures/1/20205011/910eccf0968bbcf8966b6e4dae063ccc_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.1",
+"reviewCount": "115"
+},
+"url": "/ottapalam/noora-restaurant-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "Noora Junction, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Arabian"
+}
+},
+{
+"@type": "ListItem",
+"position": 12,
+"item": {
+"@type": "Restaurant",
+"name": "Arabian Grill And Fry",
+"image": "https://b.zmtcdn.com/data/pictures/9/20204179/503fb32ca59602e58ae0e4ed18624120_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.0",
+"reviewCount": "2,224"
+},
+"url": "/ottapalam/arabian-grill-and-fry-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "24/305, 1, 2, 3, Zamil Plaza, East Ottapalam, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Fast Food, Arabian, Chinese"
+}
+},
+{
+"@type": "ListItem",
+"position": 13,
+"item": {
+"@type": "Restaurant",
+"name": "Hotel Sreelakshmi",
+"image": "https://b.zmtcdn.com/data/pictures/7/20203417/3ef22ba31c1062a587ff2b754ccb8e65_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.5",
+"reviewCount": "575"
+},
+"url": "/ottapalam/hotel-sreelakshmi-1-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "8/656, Main Road, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "South Indian"
+}
+},
+{
+"@type": "ListItem",
+"position": 14,
+"item": {
+"@type": "Restaurant",
+"name": "Malabar Kitchen",
+"image": "https://b.zmtcdn.com/data/pictures/9/20200189/bf10892e6a210e1afbec81fec822aef5_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3.4",
+"reviewCount": "497"
+},
+"url": "/ottapalam/malabar-kitchen-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "233/14 Seventh Day Hospital, Kanniyapuram PO Ottapalam Circle, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "South Indian, North Indian, Chinese"
+}
+},
+{
+"@type": "ListItem",
+"position": 15,
+"item": {
+"@type": "Restaurant",
+"name": "Burger Inn",
+"image": "https://b.zmtcdn.com/data/pictures/0/20473270/ff0d04a066443db27297c86a4261cb91_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.3",
+"reviewCount": "300"
+},
+"url": "/ottapalam/burger-inn-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "162/1, Ponnani Road, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Burger, Fast Food, Shake"
+}
+},
+{
+"@type": "ListItem",
+"position": 16,
+"item": {
+"@type": "Restaurant",
+"name": "Foodbae Restaurant",
+"image": "https://b.zmtcdn.com/data/pictures/0/21357360/46a8493f0ee9d2837b68126817ba3f24_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.1",
+"reviewCount": "56"
+},
+"url": "/ottapalam/foodbae-restaurant-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "Room 1-6, Building 29/231, Kanniyampuram, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "North Indian, South Indian, Seafood"
+}
+},
+{
+"@type": "ListItem",
+"position": 17,
+"item": {
+"@type": "Restaurant",
+"name": "Daily Dose Cafe",
+"image": "https://b.zmtcdn.com/data/pictures/1/20298191/1dbb30b49d7ed43ee94be1f366eea9a2_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3.6",
+"reviewCount": "113"
+},
+"url": "/ottapalam/daily-dose-cafe-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "8/1232, J R J Complex, Main Road, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Cafe, Pizza, Burger"
+}
+},
+{
+"@type": "ListItem",
+"position": 18,
+"item": {
+"@type": "Restaurant",
+"name": "Arabian Fried Chicken",
+"image": "https://b.zmtcdn.com/data/pictures/0/20257580/c9ebb1e2166d10c05f46008cbec1d387_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3.9",
+"reviewCount": "297"
+},
+"url": "/ottapalam/arabian-fried-chicken-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "74, Palakkad, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Burger, North Indian, Fast Food"
+}
+},
+{
+"@type": "ListItem",
+"position": 19,
+"item": {
+"@type": "Restaurant",
+"name": "Fruit Bae",
+"image": "https://b.zmtcdn.com/data/pictures/5/20294765/dc4ecbef5aa73c0d077be3a140ebb7a4_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3.8",
+"reviewCount": "515"
+},
+"url": "/ottapalam/fruit-bae-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "24/ 347(2), BTS Arcade, Near Scrap Market, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Fast Food, Desserts, Beverages"
+}
+},
+{
+"@type": "ListItem",
+"position": 20,
+"item": {
+"@type": "Restaurant",
+"name": "Bean Tree Cafe",
+"image": "https://b.zmtcdn.com/data/pictures/5/20452165/47a30f26750ee76f15d0c2066169834d_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.0",
+"reviewCount": "115"
+},
+"url": "/ottapalam/bean-tree-cafe-1-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "Alaparambu Building, Kanniyampuram, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Fast Food, Bakery, Beverages"
+}
+},
+{
+"@type": "ListItem",
+"position": 21,
+"item": {
+"@type": "Restaurant",
+"name": "Alankar Hot Grill",
+"image": "https://b.zmtcdn.com/data/pictures/8/21151278/2a58a03897dff85beefd07becf8ee107_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3.8",
+"reviewCount": "47"
+},
+"url": "/ottapalam/alankar-hot-grill-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "Main Road, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Kerala, Biryani, Arabian"
+}
+},
+{
+"@type": "ListItem",
+"position": 22,
+"item": {
+"@type": "Restaurant",
+"name": "Kottaram",
+"image": "https://b.zmtcdn.com/data/pictures/0/20372590/ce0878dc71aca53f0be4007a7a2cbdb9_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.1",
+"reviewCount": "332"
+},
+"url": "/ottapalam/kottaram-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "AKG Road, Palakkad, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Biryani, Chinese"
+}
+},
+{
+"@type": "ListItem",
+"position": 23,
+"item": {
+"@type": "Restaurant",
+"name": "Dessi Cuppa",
+"image": "https://b.zmtcdn.com/data/pictures/8/20207208/2cafff3a5be637929f7885f272c06947_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3.8",
+"reviewCount": "199"
+},
+"url": "/ottapalam/dessi-cuppa-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "Lijina Alayadath House, RS Road, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Fast Food, Burger, Momos"
+}
+},
+{
+"@type": "ListItem",
+"position": 24,
+"item": {
+"@type": "Restaurant",
+"name": "Ayu's Kitchen",
+"image": "https://b.zmtcdn.com/data/pictures/2/21219082/d5d48c515984cceb78ca5c2d39d60a31_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.3",
+"reviewCount": "108"
+},
+"url": "/ottapalam/ayus-kitchen-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "32/190, Suprabha Panamanna Road, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "North Indian"
+}
+},
+{
+"@type": "ListItem",
+"position": 25,
+"item": {
+"@type": "Restaurant",
+"name": "Fruzo Juice & Shakes",
+"image": "https://b.zmtcdn.com/images/res_avatar_476_320_1x_new.png",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.0",
+"reviewCount": "6"
+},
+"url": "/ottapalam/fruzo-juice-shakes-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "KV Building, Ottapalam Circle, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Shake, Sandwich, Burger"
+}
+},
+{
+"@type": "ListItem",
+"position": 26,
+"item": {
+"@type": "Restaurant",
+"name": "Melody Cafe",
+"image": "https://b.zmtcdn.com/data/pictures/0/20714000/778b9af429b769431e65200b5cb16a1a_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.0",
+"reviewCount": "16"
+},
+"url": "/ottapalam/melody-cafe-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "18/163 &164, Lakkidi, Koottupatha, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Pizza, Burger, Sandwich"
+}
+},
+{
+"@type": "ListItem",
+"position": 27,
+"item": {
+"@type": "Restaurant",
+"name": "Bombay Wala Kulfi",
+"image": "https://b.zmtcdn.com/data/pictures/2/20271492/dcdd122c4ac7c3cddf224f0512edd9f4_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.9",
+"reviewCount": "184"
+},
+"url": "/ottapalam/bombay-wala-kulfi-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "24/347-7, Palappuram PO, Palakkad, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": ", Beverages"
+}
+},
+{
+"@type": "ListItem",
+"position": 28,
+"item": {
+"@type": "Restaurant",
+"name": "Hotel Aramana",
+"image": "https://b.zmtcdn.com/data/pictures/7/19092037/04242141a266300a67560c1271fd8b8c_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.0",
+"reviewCount": "24"
+},
+"url": "/ottapalam/hotel-aramana-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "Railway Station Road, Palakkad, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "North Indian, South Indian, Chinese"
+}
+},
+{
+"@type": "ListItem",
+"position": 29,
+"item": {
+"@type": "Restaurant",
+"name": "KL 51 Food Factory",
+"image": "https://b.zmtcdn.com/data/pictures/1/20201261/55893bb5805de9dcb4fd86e80ae51d55_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.0",
+"reviewCount": "286"
+},
+"url": "/ottapalam/kl-51-food-factory-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "7/434-9, ASCO Tower, Near Axis Bank, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Arabian"
+}
+},
+{
+"@type": "ListItem",
+"position": 30,
+"item": {
+"@type": "Restaurant",
+"name": "MFC",
+"image": "https://b.zmtcdn.com/data/pictures/6/20204746/e05726f52fa5c3f0e5904c1158904ec4_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.0",
+"reviewCount": "30"
+},
+"url": "/ottapalam/mfc-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "KL 51, Food Factory, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Fast Food, Street Food"
+}
+},
+{
+"@type": "ListItem",
+"position": 31,
+"item": {
+"@type": "Restaurant",
+"name": "Momo Popz",
+"image": "https://b.zmtcdn.com/data/pictures/1/21773201/29bedcbc9c1b0b20eff9ca2698a67056_o2_featured_v2.jpg",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "0",
+"reviewCount": "0"
+},
+"url": "/ottapalam/momo-popz-ottapalam-locality/order",
+"address": {
+"@type": "PostalAddress",
+"addressCountry": "",
+"addressLocality": "",
+"addressRegion": "",
+"postalCode": "",
+"streetAddress": "Room 29/285-7, Ground Floor, Kanniampuram, Palakkad, Near Valluvanad Bus Stop, Ottapalam Locality, Ottapalam"
+},
+"servesCuisine": "Momos, Tea, Coffee"
+}
+}
+]
+}
