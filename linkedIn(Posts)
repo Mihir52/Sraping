@@ -1,0 +1,104 @@
+import requests
+import json
+import re
+from parsel import Selector
+
+cookies = {
+    'bcookie': '"v=2&a7ea5496-ed77-41cc-8b4f-56d8b4546f70"',
+    'bscookie': '"v=1&202412060540535ad9ab27-022e-428f-82e8-2d3fe4716206AQEU1pKNCr865Q9uC6UL2XW0_SO-QVeM"',
+    'li_rm': 'AQH3wcKchadziQAAAZQx1cLNQMjnkmuIY7upQzNjul8-IAQkVerfm4pcSSMHamRnV0khXYtgSwCgXdK5qHNZki4OeSDNmNNSbIcgb2TiCR9b9QXYPet5tpV9xDOXrV8xKJYgfSe1ODhXgN_P6Lp8puEAW2a8x1idYRl4yId9a_jmqhbBpG5aRMEeR3wtt6RIcCQrBn-bQBlytdQ4cLB3Xge-KTZJxgAtei2fOuJhO28kzkddYgU3PzMZGA7Uo1iz8RMiO3-HMmpjtzx65kKcnIGe2tNrEe-Mm-VIutd1EiMxwVYi-OaJUPNPYoul6Z7rTQnOIethIlfiyzUhdm0',
+    'li_theme': 'light',
+    'li_theme_set': 'app',
+    'dfpfpt': '87acdfa068e243eab52cff2333b1406c',
+    'timezone': 'Asia/Calcutta',
+    'fptctx2': 'taBcrIH61PuCVH7eNCyH0F58uBDuZFZOunQHZt3Fugk5%252b38xyHQi3Sedz8o3Z8rLa5Ji%252f83iPThwcYTW%252bxlQLVVDqHcURiu1Ni4vbBuBn7Y%252fYv2ak95S9MnRlPxOnwkACRxg7GMLMjv7VIDKOND82xXEUYq9bRBsaewBmKxMnD6A%252fxJXqatpudw%252femIPHssq0juMmArI%252bGevj5SgTdas1PTY%252bnHtVrqChLZFp%252bEw4%252bAPzwsjngww9MIbLlb7KzUbSfOeCJ49Jyv33YdXQWOtFd9HyNI46dCMA%252fQaW8tarZLqKiHSSbV5d%252bnQearFcEUkDOxsSSUZEsJQnmLmcjJZK3hsP6T6h3XQ0zn22AD%252bceM%253d',
+    'visit': 'v=1&M',
+    'lang': 'v=2&lang=en-us',
+    'li_at': 'AQEDAVkqm2IElMGFAAABleCbueEAAAGWBKg94U0AJRJ2an0fxCBO7mGiRuAjvdfthZSqN_LH2VwkcrXCujuq-Z7hM09K2W3GykfrZxQf2zG8Bfk06YgSMOr1XzovL8c7WKXSVtSNtTUBo9MjC_5aPV8j',
+    'liap': 'true',
+    'JSESSIONID': '"ajax:0996242185936814077"',
+    'lidc': '"b=OB14:s=O:r=O:a=O:p=O:g=6097:u=4:x=1:i=1743233221:t=1743296665:v=2:sig=AQEuLnJUNRoiLw9DsHDC4RUIbkm5EKrI"',
+    'UserMatchHistory': 'AQIIFSnk-r5RIAAAAZXhNtHRIBTYUM67jWQTWHgs-TttPbeqVs1ndN63LmLTJOZTyOASmmzVub-TpSoqyzG7TFAtPCHL3GDlUs3ZsIIhKpGEOriFrfmKT71wIJQdsk-rZD_tnuOmMfKPEBt6d0sF_0QgEewX8ZtDp-qHV0tMjZLAYrWusYWkID4Fc01KRo90QWNR4LN0wl241ja4dp_5bc-8BusHXMZut28w15xBpIPVABunhJaoYVohIG0a61XWgDEX2Edh7vv6LPAJ5DQ6BbIVa5L74Yj4kVJ0B0jarM7V5LMmo_RkqEIRkTI9CG4F8y4_EDn9fRHTFZ9DGO9p',
+}
+
+headers = {
+    'accept': 'application/vnd.linkedin.normalized+json+2.1',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'no-cache',
+    'csrf-token': 'ajax:0996242185936814077',
+    'pragma': 'no-cache',
+    'priority': 'u=1, i',
+    'referer': 'https://www.linkedin.com/search/results/content/?heroEntityKey=urn%3Ali%3Aorganization%3A269604&keywords=yes%20bank&origin=FACETED_SEARCH&position=0&searchId=8561febd-2dba-49c6-8f43-4b5280b13980&sid=a5s&sortBy=%22date_posted%22',
+    'sec-ch-ua': '"Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-origin',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
+    'x-li-lang': 'en_US',
+    'x-li-page-instance': 'urn:li:page:d_flagship3_search_srp_content;TYAAOnprQbGL8h5nF3U+7Q==',
+    'x-li-pem-metadata': 'Voyager - Content SRP=search-results',
+    'x-li-track': '{"clientVersion":"1.13.33064","mpVersion":"1.13.33064","osName":"web","timezoneOffset":5.5,"timezone":"Asia/Calcutta","deviceFormFactor":"DESKTOP","mpName":"voyager-web","displayDensity":1.25,"displayWidth":1920,"displayHeight":1080}',
+    'x-restli-protocol-version': '2.0.0',
+    # 'cookie': 'bcookie="v=2&a7ea5496-ed77-41cc-8b4f-56d8b4546f70"; bscookie="v=1&202412060540535ad9ab27-022e-428f-82e8-2d3fe4716206AQEU1pKNCr865Q9uC6UL2XW0_SO-QVeM"; li_rm=AQH3wcKchadziQAAAZQx1cLNQMjnkmuIY7upQzNjul8-IAQkVerfm4pcSSMHamRnV0khXYtgSwCgXdK5qHNZki4OeSDNmNNSbIcgb2TiCR9b9QXYPet5tpV9xDOXrV8xKJYgfSe1ODhXgN_P6Lp8puEAW2a8x1idYRl4yId9a_jmqhbBpG5aRMEeR3wtt6RIcCQrBn-bQBlytdQ4cLB3Xge-KTZJxgAtei2fOuJhO28kzkddYgU3PzMZGA7Uo1iz8RMiO3-HMmpjtzx65kKcnIGe2tNrEe-Mm-VIutd1EiMxwVYi-OaJUPNPYoul6Z7rTQnOIethIlfiyzUhdm0; li_theme=light; li_theme_set=app; dfpfpt=87acdfa068e243eab52cff2333b1406c; timezone=Asia/Calcutta; fptctx2=taBcrIH61PuCVH7eNCyH0F58uBDuZFZOunQHZt3Fugk5%252b38xyHQi3Sedz8o3Z8rLa5Ji%252f83iPThwcYTW%252bxlQLVVDqHcURiu1Ni4vbBuBn7Y%252fYv2ak95S9MnRlPxOnwkACRxg7GMLMjv7VIDKOND82xXEUYq9bRBsaewBmKxMnD6A%252fxJXqatpudw%252femIPHssq0juMmArI%252bGevj5SgTdas1PTY%252bnHtVrqChLZFp%252bEw4%252bAPzwsjngww9MIbLlb7KzUbSfOeCJ49Jyv33YdXQWOtFd9HyNI46dCMA%252fQaW8tarZLqKiHSSbV5d%252bnQearFcEUkDOxsSSUZEsJQnmLmcjJZK3hsP6T6h3XQ0zn22AD%252bceM%253d; visit=v=1&M; lang=v=2&lang=en-us; li_at=AQEDAVkqm2IElMGFAAABleCbueEAAAGWBKg94U0AJRJ2an0fxCBO7mGiRuAjvdfthZSqN_LH2VwkcrXCujuq-Z7hM09K2W3GykfrZxQf2zG8Bfk06YgSMOr1XzovL8c7WKXSVtSNtTUBo9MjC_5aPV8j; liap=true; JSESSIONID="ajax:0996242185936814077"; lidc="b=OB14:s=O:r=O:a=O:p=O:g=6097:u=4:x=1:i=1743233221:t=1743296665:v=2:sig=AQEuLnJUNRoiLw9DsHDC4RUIbkm5EKrI"; UserMatchHistory=AQIIFSnk-r5RIAAAAZXhNtHRIBTYUM67jWQTWHgs-TttPbeqVs1ndN63LmLTJOZTyOASmmzVub-TpSoqyzG7TFAtPCHL3GDlUs3ZsIIhKpGEOriFrfmKT71wIJQdsk-rZD_tnuOmMfKPEBt6d0sF_0QgEewX8ZtDp-qHV0tMjZLAYrWusYWkID4Fc01KRo90QWNR4LN0wl241ja4dp_5bc-8BusHXMZut28w15xBpIPVABunhJaoYVohIG0a61XWgDEX2Edh7vv6LPAJ5DQ6BbIVa5L74Yj4kVJ0B0jarM7V5LMmo_RkqEIRkTI9CG4F8y4_EDn9fRHTFZ9DGO9p',
+}
+
+response = requests.get(
+    'https://www.linkedin.com/voyager/api/graphql?includeWebMetadata=true&variables=(start:0,origin:FACETED_SEARCH,query:(keywords:yes%20bank,flagshipSearchIntent:SEARCH_SRP,queryParameters:List((key:heroEntityKey,value:List(urn%3Ali%3Aorganization%3A269604)),(key:position,value:List(0)),(key:resultType,value:List(CONTENT)),(key:searchId,value:List(8561febd-2dba-49c6-8f43-4b5280b13980)),(key:sortBy,value:List(date_posted))),includeFiltersInResponse:false),count:3)&queryId=voyagerSearchDashClusters.9c3177ca40ed191b452e1074f52445a8',
+    cookies=cookies,
+    headers=headers,
+)
+
+print("--Status code--",response.status_code)
+
+if response.status_code == 200:
+    # jd = response.json()
+    jd = json.loads(response.text)
+    # print(jd)
+    for i in jd.get('included',[]):
+        try:
+          if 'socialContent' in i:
+            # included[7].socialContent.shareUrl
+            post_url = i['socialContent']['shareUrl']
+            print(post_url)
+        except Exception as e:
+          print(f"***post_url error : {e}")
+
+        try:
+          # included[6].actor.name.text
+          if 'actor' in i:
+            name = i['actor']['name']['text']
+            print("Name : ",name)
+        except Exception as e:
+          print(f"***name error : {e}")
+
+        try:
+            # included[44].commentary.text.text
+            if 'commentary' in i:
+                post_content = i['commentary']['text']['text']
+                print(f"Post-content : {post_content}")
+
+                try:
+                    # Extract hashtags using regex
+                    hashtags = re.findall(r'#\w+', post_content)
+                    print("Hashtags:", hashtags)
+                except Exception as e:
+                    print(f"****hastag error : {e}")
+        except Exception as e:
+          print(f"***post_content error : {e}")
+
+        # try:
+        #     # included[0].followerCount
+        #     if 'followerCount' in i:
+        #         follower_count = i['followerCount']
+        #         print(f"Follower-count : {follower_count}")
+        # except Exception as e:
+        #     print(f"***follower_count error : {e}")
+else:
+  print(f"Status code : {response.status_code}")
+
+
+
+
+
